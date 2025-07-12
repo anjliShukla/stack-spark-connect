@@ -66,6 +66,11 @@ export default {
 					down: 'hsl(var(--vote-down))',
 					neutral: 'hsl(var(--vote-neutral))'
 				},
+				'statkit-red': {
+					DEFAULT: 'hsl(var(--statkit-red))',
+					foreground: 'hsl(var(--statkit-red-foreground))',
+					hover: 'hsl(var(--statkit-red-hover))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

@@ -38,6 +38,11 @@ All colors MUST be HSL for consistency
     --warning-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
+    
+    /* StatKit branding */
+    --statkit-red: 8 79% 45%;
+    --statkit-red-foreground: 0 0% 100%;
+    --statkit-red-hover: 8 79% 40%;
 
     /* Vote colors */
     --vote-up: 142 76% 36%;
@@ -109,6 +114,11 @@ All colors MUST be HSL for consistency
     --warning-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
+    
+    /* StatKit branding */
+    --statkit-red: 8 79% 45%;
+    --statkit-red-foreground: 0 0% 100%;
+    --statkit-red-hover: 8 79% 50%;
 
     --vote-up: 142 76% 40%;
     --vote-down: 0 84% 65%;
