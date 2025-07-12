@@ -76,16 +76,16 @@ export function QuestionFeed() {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
         <div>
-          <h2 className="text-2xl font-heading font-bold">All Questions</h2>
-          <p className="text-muted-foreground">
+          <h2 className="text-xl md:text-2xl font-heading font-bold">All Questions</h2>
+          <p className="text-muted-foreground text-sm md:text-base">
             {questions.length.toLocaleString()} questions
           </p>
         </div>
         
-        <Link to="/ask">
-          <Button className="bg-gradient-primary hover:bg-primary-hover">
+        <Link to="/ask" className="sm:hidden">
+          <Button className="w-full bg-gradient-primary hover:bg-primary-hover">
             Ask Question
           </Button>
         </Link>
@@ -93,11 +93,11 @@ export function QuestionFeed() {
 
       {/* Filter Tabs */}
       <Tabs defaultValue="newest" className="w-full">
-        <TabsList className="grid w-full grid-cols-4">
-          <TabsTrigger value="newest">Newest</TabsTrigger>
-          <TabsTrigger value="active">Active</TabsTrigger>
-          <TabsTrigger value="unanswered">Unanswered</TabsTrigger>
-          <TabsTrigger value="votes">Most Votes</TabsTrigger>
+        <TabsList className="grid w-full grid-cols-2 sm:grid-cols-4">
+          <TabsTrigger value="newest" className="text-xs sm:text-sm">Newest</TabsTrigger>
+          <TabsTrigger value="active" className="text-xs sm:text-sm">Active</TabsTrigger>
+          <TabsTrigger value="unanswered" className="text-xs sm:text-sm">Unanswered</TabsTrigger>
+          <TabsTrigger value="votes" className="text-xs sm:text-sm">Most Votes</TabsTrigger>
         </TabsList>
 
         <TabsContent value="newest" className="space-y-4 mt-6">
